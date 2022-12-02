@@ -19,7 +19,7 @@ def part1():
 
     total_points = 0
 
-    with open('day2_input.txt') as f:
+    with open('day02_input.txt') as f:
         for line in f:
             elf_move, my_move = line.strip().split(' ')
 
@@ -35,7 +35,7 @@ def part2():
 
     total_points = 0
 
-    with open('day2_input.txt') as f:
+    with open('day02_input.txt') as f:
         for line in f:
             elf_move, my_result = line.strip().split(' ')
 

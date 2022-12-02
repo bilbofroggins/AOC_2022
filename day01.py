@@ -1,7 +1,7 @@
 def part1():
     calories = [0]
 
-    with open('day1_input.txt') as f:
+    with open('day01_input.txt') as f:
         elf = 0
         for line in f:
             val = line.strip()
@@ -18,7 +18,7 @@ def part1():
 def part2():
     calories = [0]
 
-    with open('day1_input.txt') as f:
+    with open('day01_input.txt') as f:
         elf = 0
         for line in f:
             val = line.strip()
