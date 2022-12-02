@@ -14,14 +14,14 @@ def part1():
     total_points = 0
 
     with open('day2_input.txt') as f:
-    for line in f:
-        elf_move, my_move = line.strip().split(' ')
+        for line in f:
+            elf_move, my_move = line.strip().split(' ')
 
-        shape_points = points[x_to_az[my_move]]
-        win_points = win_pts(x_to_az[my_move], elf_move)
-        total_points += (shape_points + win_points)
+            shape_points = points[x_to_az[my_move]]
+            win_points = win_pts(x_to_az[my_move], elf_move)
+            total_points += (shape_points + win_points)
 
-    print(total_points)
+        print(total_points)
 
 
 part1()
