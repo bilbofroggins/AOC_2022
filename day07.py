@@ -15,7 +15,6 @@ while True:
     if not line:
         break
     line = line.strip()
-    # print("New section")
 
     if line == '$ cd /':
         continue
@@ -36,8 +35,6 @@ while True:
                 node.children_dirs[line[4:]] = Node(line[4:], node)
             else:
                 node.filesize_total += int(line.split(' ')[0])
-
-            # print(line, node.filesize_total)
 
     if line == '$ cd ..':
         node = node.parent
