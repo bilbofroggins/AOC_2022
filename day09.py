@@ -30,7 +30,7 @@ class Vector:
     def to_tuple(self):
         return (self.row, self.col)
 
-GRID_SIZE = 16
+GRID_SIZE = 100
 PART_ONE = False
 if PART_ONE:
     ROPE_LENGTH = 2
