@@ -27,7 +27,7 @@ def valid_neighbors(row, col):
         if new_row >= 0 and new_row < num_rows and new_col >= 0 and new_col < num_cols:
             yield (new_row, new_col)
 
-def part1():
+def solve():
     q = deque()
     q.append((start_pos[0], start_pos[1], 0))
     seen = set()
@@ -46,4 +46,4 @@ def part1():
                 q.append((new_row, new_col, num_steps + 1))
                 seen.add((new_row, new_col))
 
-print(part1())
+print(solve())
